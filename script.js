@@ -32,6 +32,8 @@ const countToFifty = () => {
 };
 // countToFifty();
 
+/* ================================================================== */
+
 // add and multiply all numbers inside an array
 
 const myNumbers = [1, 2, 3, 4, 5, 6];
@@ -40,6 +42,8 @@ const sumNum = myNumbers.reduce((a, b) => a + b);
 const mulNum = myNumbers.reduce((a, b) => a * b);
 
 // console.log(sumNum, mulNum);
+
+/* ================================================================== */
 
 // Exponential of a given number
 
@@ -51,6 +55,8 @@ const findExp = (givNum, expoNum) => {
   console.log(result);
 };
 // findExp(5, 5);
+
+/* ================================================================== */
 
 // Extract words from a paragraph without punctuation
 
@@ -72,6 +78,8 @@ const getAllWords = (words) => {
 };
 
 // getAllWords(paragraph);
+
+/* ================================================================== */
 
 // Two sums
 // for example
@@ -105,4 +113,6 @@ const twoSum = (arr, target) => {
   console.log(firstNum, secondNum);
 };
 
-twoSum(arrNum, targetNum);
+// twoSum(arrNum, targetNum);
+
+/* ================================================================== */
