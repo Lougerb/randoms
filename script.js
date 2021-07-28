@@ -31,3 +31,44 @@ const countToFifty = () => {
   }
 };
 // countToFifty();
+
+// add and multiply all numbers inside an array
+
+const myNumbers = [1, 2, 3, 4, 5, 6];
+
+const sumNum = myNumbers.reduce((a, b) => a + b);
+const mulNum = myNumbers.reduce((a, b) => a * b);
+
+// console.log(sumNum, mulNum);
+
+// Exponential of a given number
+
+const findExp = (givNum, expoNum) => {
+  let result = givNum;
+  for (let i = 1; i < expoNum; i++) {
+    result *= givNum;
+  }
+  console.log(result);
+};
+// findExp(5, 5);
+
+// Extract words from a paragraph without punctuation
+
+const paragraph =
+  "Lorem/ ipsum dolor sit amet consectetur adipisicing; elit. Quod quisquam: cumque animi ratione! nesciunt, perferendis modi. maiores doloremque! consequatur, placeat.";
+
+// to remove punctuations
+// use .replace("new_string_here", "string to replace")
+// use .replace(/[ *insert Punctuation Here* ]/g, "")
+// "g" means global to each word inside the paragraph
+
+const getAllWords = (words) => {
+  const removePunc = words.replace(/[\,.!/?]/g, "");
+  const splitWords = removePunc.split(" ");
+
+  splitWords.map((word) => {
+    console.log(word);
+  });
+};
+
+getAllWords(paragraph);
