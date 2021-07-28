@@ -71,4 +71,38 @@ const getAllWords = (words) => {
   });
 };
 
-getAllWords(paragraph);
+// getAllWords(paragraph);
+
+// Two sums
+// for example
+// Given num=[2,7,11,12,15] target = 9
+// Get two number in an array that will equal to the target
+// there is only one solution
+
+const arrNum = [2, 7, 11, 12, 15];
+const targetNum = 27;
+
+const twoSum = (arr, target) => {
+  // Get the two numbers from array that equals to target
+  let sol = arr.map((num1) => {
+    return arr.filter((num2) => num1 + num2 == target)[0];
+  });
+  // To remove unidentify
+  const filterSol = sol.filter((num) => num != null); //output of 2 number = target
+
+  // Output
+  console.log(filterSol);
+
+  // Get index of those numbers
+  const indexOfArrNum = [];
+  filterSol.forEach((num) => {
+    indexOfArrNum.push(arr.indexOf(num));
+  });
+
+  const firstNum = indexOfArrNum[0],
+    secondNum = indexOfArrNum[1];
+  // Output
+  console.log(firstNum, secondNum);
+};
+
+twoSum(arrNum, targetNum);
