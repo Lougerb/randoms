@@ -116,3 +116,20 @@ const twoSum = (arr, target) => {
 // twoSum(arrNum, targetNum);
 
 /* ================================================================== */
+
+// Do triangle (2D Array)
+const docRoot = document.getElementById("doHere");
+const doTriangle = () => {
+  let star = "";
+
+  for (let col = 0; col < 4; col++) {
+    // console.log("\n");
+    for (let row = 0; row < col; row++) {
+      // console.log(`col: ${col} row: ${row}`);
+
+      docRoot.insertAdjacentHTML("beforeend", `<p>${(star += "*")}</p>`);
+      // console.log("*");
+    }
+  }
+};
+doTriangle();
