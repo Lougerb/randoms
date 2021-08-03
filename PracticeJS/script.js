@@ -65,7 +65,7 @@ const paragraph =
 
 // to remove punctuations
 // use .replace("new_string_here", "string to replace")
-// use .replace(/[ *insert Punctuation Here* ]/g, "")
+// use .replace(/[ *insert Punctuations Here* ]/g, "")
 // "g" means global to each word inside the paragraph
 
 const getAllWords = (words) => {
