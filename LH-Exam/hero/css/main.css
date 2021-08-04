@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+body {
+  font-family: Roboto;
+  color: #333;
+}
+
+#hero {
+  background: url("../assets/desktop/hero-bg_pc.png") center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-text {
+  /* width: 526px; */
+  font-size: 3em;
+  text-align: center;
+  margin: 0 55px;
+}
+
+@media (max-width: 801px) {
+  #hero {
+    background: url("../assets/mobile/hero-bg_sp.png") center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1080px) {
+  #hero {
+    background: url("../assets/desktop/hero-bg_pc@2x.png") center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+body {
+  font-family: Roboto;
+  color: #333;
+}
+.container {
+  width: 100vw;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  justify-content: center;
+  row-gap: 30px;
+}
+.container h1 {
+  font-size: 3em;
+  font-weight: bolder;
+}
+.container h3 {
+  font-size: 1.5em;
+  font-weight: bolder;
+}
+
+.card-container {
+  width: 1256px;
+  display: grid;
+}
+.col-4 {
+  grid-template-columns: repeat(4, auto);
+}
+.col-3 {
+  grid-template-columns: repeat(3, auto);
+}
+.card {
+  display: grid;
+  grid-template-rows: auto auto auto;
+}
+.card-col-4 {
+  width: 302px;
+  height: 282px;
+}
+.card-col-3 {
+  width: 408px;
+  height: 318px;
+}
+
+@media (max-width: 1025px) {
+  .card-container {
+    width: auto;
+  }
+  .col-4 {
+    grid-template-columns: repeat(2, auto);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+  .col-3 {
+    grid-template-columns: repeat(1, auto);
+    justify-content: center;
+    row-gap: 20px;
+  }
+
+  .card-col-4 {
+    width: 265px;
+    height: 282px;
+  }
+  .card-col-3 {
+    width: 545px;
+    height: 380px;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-col-4 {
+    width: 165px;
+    height: 282px;
+  }
+  .card-col-3 {
+    width: 345px;
+    height: 316px;
+  }
+}
