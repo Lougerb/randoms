@@ -67,10 +67,6 @@ body {
 }
 
 @media (max-width: 1025px) {
-  /* .card-section-img {
-    height: auto;
-    width: auto;
-  } */
   .card-desc {
     margin-top: 15px;
   }

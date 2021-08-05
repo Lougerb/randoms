@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css\main.css" />
+    <title>Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-title">
+        <h1>Form</h1>
+      </div>
+      <div class="form-wrapper">
+        <form action="#" id="myForm">
+          <table id="form-table">
+            <tr>
+              <th>Name</th>
+              <th>
+                <input type="text" />
+              </th>
+            </tr>
+            <tr>
+              <th>Company</th>
+              <th>
+                <input type="text" />
+              </th>
+            </tr>
+            <tr>
+              <th>Email</th>
+              <th>
+                <input type="email" />
+              </th>
+            </tr>
+            <tr>
+              <th>Select Field</th>
+              <th>
+                <select name="select" id="select-field">
+                  <option value="0"></option>
+                  <option value="1">1</option>
+                  <option value="1">2</option>
+                  <option value="1">3</option>
+                  <option value="1">4</option>
+                </select>
+              </th>
+            </tr>
+            <tr>
+              <th>Radio Field</th>
+              <th>
+                <div id="form-radio">
+                  <input
+                    type="radio"
+                    name="radio-select"
+                    id="rad-1"
+                    class="rad"
+                  />
+                  <label for="rad-1" class="rad-selection">Selection 1</label>
+
+                  <input
+                    type="radio"
+                    name="radio-select"
+                    id="rad-2"
+                    class="rad"
+                  />
+                  <label for="rad-2" class="rad-selection">Selection 2</label>
+
+                  <input
+                    type="radio"
+                    name="radio-select"
+                    id="rad-3"
+                    class="rad"
+                  />
+                  <label for="rad-3" class="rad-selection">Selection 3</label>
+
+                  <input
+                    type="radio"
+                    name="radio-select"
+                    id="rad-4"
+                    class="rad"
+                  />
+                  <label for="rad-4" class="rad-selection">Selection 4</label>
+                </div>
+              </th>
+            </tr>
+            <tr>
+              <th>Checkbox Field</th>
+              <th>
+                <div id="form-chkbx">
+                  <input type="checkbox" name="checkbox-select" id="chk-1" />
+                  <label for="chk-1" class="chkb"> Selection 1</label>
+                  <input type="checkbox" name="checkbox-select" id="chk-2" />
+                  <label for="chk-2" class="chkb"> Selection 2</label>
+                  <input type="checkbox" name="checkbox-select" id="chk-3" />
+                  <label for="chk-3" class="chkb"> Selection 3</label>
+                  <input type="checkbox" name="checkbox-select" id="chk-4" />
+                  <label for="chk-4" class="chkb"> Selection 4</label>
+                </div>
+              </th>
+            </tr>
+          </table>
+          <button type="submit" form="myForm" class="btn">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
