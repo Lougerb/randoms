@@ -12,3 +12,5 @@ $(".container ul li").css("color", "green");
 $(".container ul li").css("font-weight", "700");
 $(".container ul li").css("background-color", "#aaa");
 $(".container ul li:even").css("background-color", "#eee");
+$(".imText").parent(".iSelect").css("color", "red");
+console.log($(".imText").parent(".iSelect"));
